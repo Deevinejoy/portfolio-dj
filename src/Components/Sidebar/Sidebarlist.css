@@ -1,0 +1,60 @@
+.sidebar-profile-pic img{
+    border-radius: 50%;
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    vertical-align: middle;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 2px solid yellow;
+}
+.navbar-items ul li{
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.navbar-items ul li svg{
+    margin-right: 25px;
+    margin-left: 10px;
+}
+.navbar-items-collapsed ul li{
+    margin-top:20px;
+ 
+    cursor: pointer;
+    list-style-type: none;
+    margin-bottom: 2px;
+}
+.navbar-items-collapsed ul li svg{
+    margin-left: 5px;
+    
+}
+
+.navbar-items-collapsed ul  li svg:hover{
+    border-left: 2px solid yellow ;
+
+ 
+
+}
+
+.nav-item a{
+    color: white;
+    padding: 10px;
+}
+.nav-item a:hover{
+    color: yellow;
+    border-left: 2px solid yellow ;
+    text-decoration: none;
+}
+
+
+.nav-item a[class='active']{
+    color: yellow;
+    border-left: 2px solid yellow ;
+    text-decoration: none;
+
+   
+
+}

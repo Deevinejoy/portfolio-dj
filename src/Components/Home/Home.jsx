@@ -1,0 +1,51 @@
+import React from 'react'
+import './Home.css'
+import Typewriter from 'typewriter-effect'
+import myCV from './Divine-joy-cv.pdf'
+import { BsFillMoonStarsFill , BsFillSunFill} from 'react-icons/bs'
+import Fade from 'react-reveal/Fade'
+import {Link} from 'react-scroll'
+
+const Home = ({theme, changeTheme}) => {
+  return (
+    <div className='container-fluid home'>
+        <div className="theme-change" onClick={changeTheme}>
+          {theme === 'light' ? (<p className='sun-theme'><BsFillSunFill size={40}/></p>) : (<p ><BsFillMoonStarsFill size={40}/></p>) }
+
+        </div>
+        <div className='container home-content' id='home'> 
+        <Fade right>
+            <h1>Hi, i am Divine-joy</h1>
+            <h3>
+                <Typewriter
+                options= {{
+                    strings:['Frontend', 'Developer'],
+                    autoStart: true,
+                    loop: true,
+        
+                    
+                    }}
+                    />
+            </h3>
+            </Fade>  
+            <Fade bottom>
+            <div className='btn-for-action'>
+              <Link to='contact'
+              smooth={true}
+              duration={100}
+              spy={true}><button className='hire-me-btn'>Hire me</button></Link>
+                
+                <button className='resume-btn'>
+                    <a href={myCV} download='Divine_CV'>
+                    Get resume
+                    </a>
+                  </button>
+            </div>
+            </Fade>
+        </div>
+      
+    </div> 
+  )
+}
+
+export default Home

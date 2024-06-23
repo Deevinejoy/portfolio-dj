@@ -1,0 +1,33 @@
+.work-experience{
+    margin-top: 60px;
+    font-size: larger;
+}
+
+.section-title{
+    margin-bottom: 50px;
+}
+
+.tech-skills p{
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    border-radius: 90px;
+    text-align: center;
+    font-size: 1000px;
+}
+
+.tech-skills:hover p{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.date-class{
+    color: black;
+}
+.vertical-timeline{
+    margin-top: 70px;
+}
+#dark .date-class{
+    color: white;
+}

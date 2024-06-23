@@ -1,0 +1,61 @@
+.testimonial-sect{
+    margin-top: 70px;
+    height: 80vh;
+
+}
+.main-content-slider{
+    margin-top: 30px;
+   
+
+
+}
+.content-slider{
+    padding: 10px;
+    color: white;
+    background-color: rgb(150, 48, 48);
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+    height: 250px;
+   
+}
+.content-slider:hover{
+    background-color: rgb(194, 122, 122);
+    transition-duration: 0.5s;
+}
+
+.content-slider img.center-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 90px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    margin-top: -30px;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid yellow;
+
+    
+}
+.slick-prev::before{
+    color: palevioletred;
+    background-color: red;
+    font-size: 30px;
+
+
+}
+.slick-next:before{
+    color: palevioletred;
+    background-color: red;
+    font-size: 30px;
+
+}
+#dark .content-slider{
+    background-color: #38004c;
+    box-shadow: -6px 11px 5px -4px  rgba(0,0,0,0.42);
+    --webkit-box-shadow: -6px 11px 5px -4px  rgba(0,0,0,0.42);
+    --moz-box-shadow: -6px 11px 5px -4px  rgba(0,0,0,0.42);
+    color: white;
+}

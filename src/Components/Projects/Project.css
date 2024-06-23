@@ -1,0 +1,79 @@
+.project-list{
+    box-shadow: 15px 9px 9px -2px rgba(230, 224,224,0.86);
+    -webkit-box-shadow: 15px 9px 9px -2px rgba(230, 224,224,0.86);
+    -moz-box-shadow: 15px 9px 9px -2px rgba(230, 224,224,0.86);
+    margin: 10px;
+  
+    padding: 10px;
+    border-radius: 5px;
+   
+  
+}
+.project-list-opened{
+    border-left: 5px solid blue;
+  
+}
+.project-collapse{
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+ 
+}
+
+.section-title h1{
+    text-align: center;
+}
+.project-list:hover{
+    border-left: 5px solid blue;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.des{
+    margin: 5px;
+
+}
+
+
+.live-demo-btn a{
+    background-color: rgb(10, 10, 10);
+    border-radius: 90px;
+    color: white;
+    background-color: tomato;
+    padding: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+
+}
+
+@media (min-width: 800px) {
+    #projects{
+        display: grid;
+        place-items: center;
+    }
+    
+}
+.live-demo-btn{
+    border-radius: 90px;
+    background-color:tomato;
+    margin: 10px;
+    width: fit-content;
+   
+}
+.live-demo-btn a:hover{
+    cursor: pointer;
+    transition-duration: 1s;
+    background-color: purple;
+}
+#dark .project-list{
+    background-color: #38004c;
+    box-shadow: -6px 11px 5px -4px  rgba(0,0,0,0.42);
+    --webkit-box-shadow: -6px 11px 5px -4px  rgba(0,0,0,0.42);
+    --moz-box-shadow: -6px 11px 5px -4px  rgba(0,0,0,0.42);
+    color: white;
+}
+#dark .section-title{
+    color: white;
+}
+
+
+
