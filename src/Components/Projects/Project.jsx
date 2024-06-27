@@ -51,7 +51,7 @@ const Project = () => {
        
     ]
   return (
-    <div classsName='container'
+    <div className='container'
     id='projects'>
         <div className='section-title'>
             <h1>Projects </h1>

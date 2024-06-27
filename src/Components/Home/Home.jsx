@@ -3,7 +3,7 @@ import './Home.css'
 import Typewriter from 'typewriter-effect'
 import myCV from './Divine-joy-cv.pdf'
 import { BsFillMoonStarsFill , BsFillSunFill} from 'react-icons/bs'
-import Fade from 'react-reveal/Fade'
+import {Slide} from 'react-awesome-reveal'
 import {Link} from 'react-scroll'
 
 const Home = ({theme, changeTheme}) => {
@@ -14,7 +14,7 @@ const Home = ({theme, changeTheme}) => {
 
         </div>
         <div className='container home-content' id='home'> 
-        <Fade right>
+        <Slide right>
             <h1>Hi, i am Divine-joy</h1>
             <h3>
                 <Typewriter
@@ -27,8 +27,8 @@ const Home = ({theme, changeTheme}) => {
                     }}
                     />
             </h3>
-            </Fade>  
-            <Fade bottom>
+            </Slide>  
+            <Slide bottom>
             <div className='btn-for-action'>
               <Link to='contact'
               smooth={true}
@@ -41,7 +41,7 @@ const Home = ({theme, changeTheme}) => {
                     </a>
                   </button>
             </div>
-            </Fade>
+            </Slide>
         </div>
       
     </div> 

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './Contact.css'
 import { RiSendPlaneFill } from 'react-icons/ri'
-import Fade from 'react-reveal/Fade'
+import {Zoom} from 'react-awesome-reveal'
+import {Slide} from 'react-awesome-reveal'
 import {ToastContainer, toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import emailjs from '@emailjs/browser';
@@ -70,13 +71,13 @@ const handleSubmit = (e)=>{
       
         <div className='row'>
             <div className='col-xl-5 col-lg-5 col-md-5 col-sm-5'>
-              <Fade top>
+              <Zoom top>
                 <div className="contact-form-image">
                     <img src='/img/Divine-joy.jpeg' alt='contact image'/>
 
 
                 </div>
-                </Fade>
+                </Zoom>
 
             </div>
             <div className='col-xl-7   col-lg-7 col-md-7 col-sm-7'>
@@ -85,26 +86,35 @@ const handleSubmit = (e)=>{
                     <h3>Contact me</h3>
                     <span className="line"></span>
                   </div>
-                  <Fade right>
+                  <Slide direction='right'>
                 <form action="" className="contact" onSubmit={handleSubmit} >
-                    <label className='form-label'>Name</label>
+                    <label 
+                    htmlFor ='name-text' className='form-label'>Name</label>
                     <input
+                    id='name-text'
                     type='text'
                     className='form-control'
                     value={name}
                    
                     onChange={(e)=> setName(e.target.value)}/>
 
-                    <label className='form-label'>E-mail</label>
+                    <label 
+                    htmlFor ='email-text'
+                    className='form-label'>E-mail</label>
                     <input
+                    id='email-text'
                     type='text'
                     className='form-control'
                     value={email}
                 
                     onChange={(e)=> setEmail(e.target.value)}/>
 
-                    <label className='form-label'>Job-type</label>
-                    <select className='form-control custom-select'
+                    <label 
+                    htmlFor ='select'
+                    className='form-label'>Job-type</label>
+                    <select 
+                    id='select'
+                    className='form-control custom-select'
                     value={jobType}
                     
                     
@@ -115,8 +125,12 @@ const handleSubmit = (e)=>{
                        <option>Contract</option>
                     </select>
 
-                    <label className='form-label'>Messsage</label>
-                    <textarea rows='4' className='form-control text-area'
+                    <label 
+                    htmlFor='textarea'
+                    className='form-label'>Messsage</label>
+                    <textarea 
+                    id='textarea'
+                    rows='4' className='form-control text-area'
                     value={message}
                    
                     onChange={(e)=> setMessage(e.target.value)}>
@@ -126,7 +140,7 @@ const handleSubmit = (e)=>{
                     <RiSendPlaneFill size={20}/>
                     </button>
                 </form>
-                </Fade>
+                </Slide>
               </div>
 
 

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './Project.css'
 import { FcExpand, FcCollapse } from 'react-icons/fc'
-import Zoom from 'react-reveal/Zoom'
+
+import {Zoom} from 'react-awesome-reveal'
 
 const Projectlist = ({item }) => {
     const [projectCollapse, setProjectCollapse] = useState(false)

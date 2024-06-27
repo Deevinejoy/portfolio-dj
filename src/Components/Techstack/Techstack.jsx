@@ -1,8 +1,8 @@
 import React from 'react'
 import './Techstack.css'
 import {useState} from 'react'
-import Fade from 'react-reveal/Fade'
-import Zoom from 'react-reveal/Zoom'
+import {Slide} from 'react-awesome-reveal'
+import {Zoom} from 'react-awesome-reveal'
 
 const Techstack = () => {
     const data=[
@@ -65,11 +65,11 @@ const Techstack = () => {
             <h1>Tech stack</h1>
             <span className="line"></span>
         </div>
-        <div className='row' >
+        <div className='row'>
         {data.slice(0,loadMore).map((item, index)=>
-         <Fade right>
-            <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12' >
-                <div  className={index===0? 'tech-content-marked tech-content':'tech-content'} key={index}>
+         <Slide right  key={index} >
+            <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12'   key={index}   >
+                <div  className={index===0? 'tech-content-marked tech-content':'tech-content'} >
                     <span className='tech-no'
                      style={{backgroundColor: colors[index]}}> {index+1}
 
@@ -78,7 +78,7 @@ const Techstack = () => {
                 </div>
                                
             </div>
-        </Fade>
+        </Slide>
 
         )} 
         </div>
