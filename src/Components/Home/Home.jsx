@@ -10,7 +10,7 @@ const Home = ({theme, changeTheme}) => {
   return (
     <div className='container-fluid home'>
         <div className="theme-change" onClick={changeTheme}>
-          {theme === 'light' ? (<p className='sun-theme'><BsFillSunFill size={40}/></p>) : (<p ><BsFillMoonStarsFill size={40}/></p>) }
+          {theme === 'light' ? (<p ><BsFillMoonStarsFill size={40}/></p>) : (<p ><BsFillSunFill className='sun-theme' size={40}/></p>) }
 
         </div>
         <div className='container home-content' id='home'> 

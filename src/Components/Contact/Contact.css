@@ -102,5 +102,10 @@ label{
 #dark .btn-submit:hover{
     background-color: rgb(227, 105, 105)
 }
-
+@media (max-width:800px) {
+    .contact-section{
+        margin-left: 0px;
+    }
+    
+}
 
